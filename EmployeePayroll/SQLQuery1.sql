@@ -25,3 +25,6 @@ insert into employee_payroll (name, basic_pay, startDate) values
 ('Terissa', 2000000.00,'2019-11-13'),
 ('Charlie', 3000000.00,'2020-05-21');
 
+--UC4
+
+select * from employee_payroll
