@@ -36,3 +36,11 @@ select basic_pay from employee_payroll where name = 'Bill';
 select * from employee_payroll
 WHERE startDate BETWEEN CAST('2018-01-01' as date) AND getdate();
 
+--UC6
+
+--alter table employee_payroll add gender char(1) after department;
+
+update employee_payroll set gender = 'F' where name = 'Terissa';
+update employee_payroll set gender = 'M' where name = 'Bill'or name = 'Charlie';
+
+
