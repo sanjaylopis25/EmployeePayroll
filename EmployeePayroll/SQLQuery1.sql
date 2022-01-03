@@ -43,4 +43,14 @@ WHERE startDate BETWEEN CAST('2018-01-01' as date) AND getdate();
 update employee_payroll set gender = 'F' where name = 'Terissa';
 update employee_payroll set gender = 'M' where name = 'Bill'or name = 'Charlie';
 
+--UC7
 
+select avg (basic_pay) from employee_payroll where gender = 'M' group by gender;
+
+select avg (basic_pay) from employee_payroll group by gender;
+
+select gender, avg (basic_pay) from employee_payroll group by gender;
+
+select gender, count (name) from employee_payroll group by gender;
+
+select gender, sum (basic_pay) from employee_payroll group by gender;
