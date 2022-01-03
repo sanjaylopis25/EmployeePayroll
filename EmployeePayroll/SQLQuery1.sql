@@ -28,3 +28,11 @@ insert into employee_payroll (name, basic_pay, startDate) values
 --UC4
 
 select * from employee_payroll
+
+--UC5
+
+select basic_pay from employee_payroll where name = 'Bill';
+
+select * from employee_payroll
+WHERE startDate BETWEEN CAST('2018-01-01' as date) AND getdate();
+
