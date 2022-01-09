@@ -61,3 +61,11 @@ select gender, sum (basic_pay) from employee_payroll group by gender;
 --alter table employee_payroll add address varchar(100) after phone;
 --alter table employee_payroll add department varchar(20) after address;
 
+--UC9
+--ALTER TABLE employee_payroll RENAME COLUMN salary TO Basic_pay;
+--ALTER TABLE employee_payroll ADD COLUMN Deductions float default 0 AFTER Basic_pay;
+--ALTER TABLE employee_payroll ADD COLUMN Taxable_pay float default 0 AFTER Deductions;
+--ALTER TABLE employee_payroll ADD COLUMN Income_Tax float default 0 AFTER Taxable_pay;
+--ALTER TABLE employee_payroll ADD COLUMN Net_pay float default 0 AFTER Income_Tax;
+--ALTER TABLE employee_payroll ADD COLUMN Net_pay float default 0 AFTER Net_pay;
+
