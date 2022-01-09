@@ -54,3 +54,10 @@ select gender, avg (basic_pay) from employee_payroll group by gender;
 select gender, count (name) from employee_payroll group by gender;
 
 select gender, sum (basic_pay) from employee_payroll group by gender;
+
+--UC8
+
+--alter table employee_payroll add phone varchar(15) after name;
+--alter table employee_payroll add address varchar(100) after phone;
+--alter table employee_payroll add department varchar(20) after address;
+
